@@ -25,8 +25,12 @@ const Index = () => {
         {/* Mission Status */}
         <div className="space-y-2 font-mono text-sm">
           <div className="flex justify-center space-x-4 text-hitmen-terminal">
-            <span>CLEARANCE: <span className="classified-text">REDACTED</span></span>
+            <span>MISSION: EPI PREVENTION</span>
             <span>STATUS: ACTIVE</span>
+          </div>
+          <div className="flex justify-center space-x-4 text-xs text-muted-foreground">
+            <span>MARKS ELIMINATED: 2040+</span>
+            <span>AGENTS: 500K+</span>
           </div>
           <div className="text-xs text-muted-foreground">
             LAST UPDATE: {new Date().toISOString().split('T')[0]}
@@ -48,7 +52,7 @@ const Index = () => {
       {/* Bottom Info */}
       <div className="absolute bottom-8 left-8 right-8 flex justify-between items-end text-xs font-mono text-muted-foreground">
         <div>
-          PROTOCOL: EPI PREVENTION
+          PROTOCOL: EARLY PORN INTRODUCTION PREVENTION
         </div>
         <div className="text-right">
           TRANSMISSION SECURE<br />

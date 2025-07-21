@@ -40,7 +40,7 @@ const MarksGallery = () => {
           </div>
           <div className="h-px w-24 bg-accent mx-auto opacity-60 mb-4" />
           <p className="text-sm font-mono text-muted-foreground">
-            CASUALTIES OF THE INFORMATION WAR
+            HARMFUL ACCOUNTS REPORTED BY THE COMMUNITY
           </p>
         </div>
 
@@ -96,21 +96,26 @@ const MarksGallery = () => {
         <div className="mission-card">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center font-mono text-sm">
             <div>
-              <div className="text-2xl font-bold text-accent">127</div>
-              <div className="text-xs text-muted-foreground">TOTAL MARKS</div>
+              <div className="text-2xl font-bold text-accent">2040+</div>
+              <div className="text-xs text-muted-foreground">ELIMINATED</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-accent">89</div>
-              <div className="text-xs text-muted-foreground">SILENCED</div>
+              <div className="text-2xl font-bold text-accent">500K+</div>
+              <div className="text-xs text-muted-foreground">AGENTS</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-yellow-500">23</div>
-              <div className="text-xs text-muted-foreground">UNDER REVIEW</div>
+              <div className="text-2xl font-bold text-yellow-500">47</div>
+              <div className="text-xs text-muted-foreground">PENDING</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-blue-400">15</div>
-              <div className="text-xs text-muted-foreground">MONITORING</div>
+              <div className="text-2xl font-bold text-blue-400">3</div>
+              <div className="text-xs text-muted-foreground">DAILY TARGETS</div>
             </div>
+          </div>
+          
+          <div className="mt-6 pt-4 border-t border-border text-center text-xs font-mono text-muted-foreground">
+            <div>FOLLOW @YOU.ARE.A.HITMAN FOR DAILY MARKS</div>
+            <div className="mt-1 text-accent">PROTECTING INSTAGRAM'S COMMUNITY SINCE 2023</div>
           </div>
         </div>
       </div>

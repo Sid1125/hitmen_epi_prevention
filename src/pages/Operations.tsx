@@ -3,35 +3,35 @@ import { Radar, Target, Zap, Shield, Clock } from "lucide-react";
 const Operations = () => {
   const operations = [
     {
-      id: "OP_NIGHTFALL",
+      id: "OP_DAILY_SWEEP",
       status: "ACTIVE",
-      classification: "TOP SECRET",
-      objective: "Counter-surveillance deployment",
-      progress: 78,
+      classification: "COMMUNITY",
+      objective: "Daily harmful content identification",
+      progress: 85,
       icon: Target,
     },
     {
-      id: "OP_GHOSTWRITE",
+      id: "OP_MASS_REPORT",
       status: "COMPLETE",
-      classification: "SECRET",
-      objective: "Information restoration protocol",
+      classification: "COMMUNITY",
+      objective: "Coordinated reporting of marked accounts",
       progress: 100,
       icon: Shield,
     },
     {
-      id: "OP_BLACKOUT",
+      id: "OP_EPI_SHIELD",
       status: "STANDBY",
-      classification: "TOP SECRET",
-      objective: "Strategic silence enforcement",
-      progress: 45,
+      classification: "HIGH PRIORITY",
+      objective: "Early Porn Introduction prevention protocols",
+      progress: 60,
       icon: Zap,
     },
     {
-      id: "OP_PHOENIX",
+      id: "OP_GUARDIAN",
       status: "PLANNING",
-      classification: "CLASSIFIED",
-      objective: "Digital resurrection initiative",
-      progress: 12,
+      classification: "COMMUNITY",
+      objective: "Enhanced child safety measures",
+      progress: 25,
       icon: Clock,
     },
   ];
@@ -139,18 +139,18 @@ const Operations = () => {
 
         {/* Command Center Footer */}
         <div className="mt-12 mission-card bg-accent/5 border-accent/30">
-          <div className="text-center space-y-4">
-            <div className="flex justify-center items-center space-x-2">
-              <Target className="w-4 h-4 text-accent" />
-              <span className="font-mono text-sm text-accent">COMMAND AUTHENTICATED</span>
-              <Target className="w-4 h-4 text-accent" />
-            </div>
-            <div className="text-xs font-mono text-muted-foreground">
-              ALL OPERATIONS PROCEED UNDER PROTOCOL EPSILON
-            </div>
-            <div className="text-xs text-muted-foreground">
-              NEXT BRIEFING: <span className="classified-text">REDACTED</span>
-            </div>
+            <div className="text-center space-y-4">
+              <div className="flex justify-center items-center space-x-2">
+                <Target className="w-4 h-4 text-accent" />
+                <span className="font-mono text-sm text-accent">COMMUNITY VERIFIED</span>
+                <Target className="w-4 h-4 text-accent" />
+              </div>
+              <div className="text-xs font-mono text-muted-foreground">
+                ALL OPERATIONS FOLLOW INSTAGRAM COMMUNITY GUIDELINES
+              </div>
+              <div className="text-xs text-muted-foreground">
+                FOLLOW: @YOU.ARE.A.HITMAN FOR LATEST OPERATIONS
+              </div>
           </div>
         </div>
       </div>

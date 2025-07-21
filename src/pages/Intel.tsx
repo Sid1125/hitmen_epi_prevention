@@ -76,7 +76,7 @@ const Intel = () => {
           </div>
           <div className="h-px w-24 bg-accent mx-auto opacity-60 mb-4" />
           <p className="text-sm font-mono text-muted-foreground">
-            FIELD REPORTS & SURVEILLANCE DATA
+            HARMFUL CONTENT MONITORING & COMMUNITY REPORTS
           </p>
         </div>
 
@@ -90,14 +90,14 @@ const Intel = () => {
                 <span className="text-xs font-mono text-muted-foreground">LIVE</span>
               </div>
               <p className="text-sm mb-3">
-                Massive platform policy changes detected. Estimated impact: 
-                <span className="text-accent font-medium"> 2.3M creators</span>. 
-                Recommend immediate protocol activation.
+                New wave of inappropriate content accounts detected. Estimated reach: 
+                <span className="text-accent font-medium"> 50K+ minors exposed</span>. 
+                Community reporting coordination activated immediately.
               </p>
               <div className="text-xs font-mono text-muted-foreground">
-                SOURCE: <span className="classified-text">REDACTED</span> • 
-                CONFIDENCE: 96% • 
-                VERIFICATION: PENDING
+                SOURCE: @YOU.ARE.A.HITMAN COMMUNITY • 
+                CONFIDENCE: 98% • 
+                ACTION: MASS REPORTING INITIATED
               </div>
             </div>
           </div>

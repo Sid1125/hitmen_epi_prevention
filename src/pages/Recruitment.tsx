@@ -49,21 +49,21 @@ const Recruitment = () => {
               </div>
               
               <div className="space-y-4">
-                <h2 className="text-xl font-mono text-accent">SECURITY CLEARANCE REQUIRED</h2>
+                <h2 className="text-xl font-mono text-accent">JOIN THE MISSION</h2>
                 <p className="text-sm text-muted-foreground">
-                  Access to recruitment protocols is restricted to verified personnel only.
+                  Help protect children from harmful content on Instagram.
                 </p>
               </div>
 
               <div className="space-y-2 font-mono text-xs">
                 <div className="text-muted-foreground">
-                  CLEARANCE LEVEL: <span className="classified-text">REDACTED</span>
+                  INSTAGRAM: <span className="text-accent">@you.are.a.hitman</span>
                 </div>
                 <div className="text-muted-foreground">
-                  AUTHORIZATION: <span className="classified-text">REDACTED</span>
+                  FOLLOWERS: <span className="text-accent">500,000+</span>
                 </div>
                 <div className="text-muted-foreground">
-                  BACKGROUND CHECK: <span className="text-accent">REQUIRED</span>
+                  ELIMINATED: <span className="text-accent">2,040+ accounts</span>
                 </div>
               </div>
             </div>
@@ -84,8 +84,8 @@ const Recruitment = () => {
 
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Direct contact is not permitted through conventional channels. 
-                  Potential recruits must demonstrate capability before consideration.
+                  Join 500,000+ digital guardians in the fight against harmful content. 
+                  Follow @you.are.a.hitman on Instagram for daily marks and coordination.
                 </p>
 
                 <div className="p-4 border border-accent/30 bg-accent/5">
@@ -93,19 +93,17 @@ const Recruitment = () => {
                     <Mail className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
                     <div className="flex-1">
                       <div className="font-mono text-sm">
-                        {showEmail ? (
-                          <span className="text-accent">recruitment@[REDACTED].onion</span>
-                        ) : (
-                          <button
-                            onClick={() => setShowEmail(true)}
-                            className="text-accent hover:text-accent/80 transition-colors underline"
-                          >
-                            [CLICK TO REVEAL CONTACT]
-                          </button>
-                        )}
+                        <a 
+                          href="https://www.instagram.com/you.are.a.hitman/" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-accent hover:text-accent/80 transition-colors underline"
+                        >
+                          @you.are.a.hitman
+                        </a>
                       </div>
                       <div className="text-xs text-muted-foreground mt-1">
-                        Tor network access required • PGP encryption mandatory
+                        Follow for daily marks • Report harmful content • Protect children
                       </div>
                     </div>
                   </div>
@@ -113,11 +111,10 @@ const Recruitment = () => {
 
                 <div className="text-center pt-6">
                   <div className="font-mono text-lg text-foreground mb-2">
-                    {typedText}
-                    <span className="animate-pulse text-accent">|</span>
+                    Together we protect.
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    Do not attempt to contact us. We are already aware.
+                    Every report counts. Every child matters.
                   </div>
                 </div>
               </div>
@@ -126,32 +123,32 @@ const Recruitment = () => {
 
           {/* Requirements */}
           <div className="mission-card">
-            <h3 className="font-mono text-accent mb-4">MINIMUM REQUIREMENTS</h3>
+            <h3 className="font-mono text-accent mb-4">HOW TO JOIN THE MISSION</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
-                <span>Proven track record in digital operations</span>
+                <span>Follow @you.are.a.hitman on Instagram</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
-                <span>Advanced knowledge of platform architectures</span>
+                <span>Watch for daily marks (harmful accounts)</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
-                <span>Ability to operate under extreme discretion</span>
+                <span>Report marked accounts for ToS violations</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
-                <span>Clearance level: <span className="classified-text">REDACTED</span></span>
+                <span>Help protect children from harmful content</span>
               </div>
             </div>
           </div>
 
           {/* Footer Warning */}
           <div className="text-center text-xs font-mono text-muted-foreground space-y-1">
-            <div>THIS COMMUNICATION IS MONITORED</div>
-            <div>UNAUTHORIZED ACCESS WILL BE PROSECUTED</div>
-            <div>PROCEED WITH EXTREME CAUTION</div>
+            <div>ALWAYS FOLLOW INSTAGRAM COMMUNITY GUIDELINES</div>
+            <div>REPORT ONLY ACTUAL VIOLATIONS</div>
+            <div>TOGETHER WE MAKE INSTAGRAM SAFER</div>
           </div>
         </div>
       </div>
