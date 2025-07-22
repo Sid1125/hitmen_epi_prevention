@@ -85,25 +85,48 @@ const Recruitment = () => {
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
                   Join 500,000+ digital guardians in the fight against harmful content. 
-                  Follow @you.are.a.hitman on Instagram for daily marks and coordination.
+                  Join our Discord for coordination and follow @you.are.a.hitman for daily marks.
                 </p>
 
-                <div className="p-4 border border-accent/30 bg-accent/5">
-                  <div className="flex items-start space-x-3">
-                    <Mail className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
-                    <div className="flex-1">
-                      <div className="font-mono text-sm">
-                        <a 
-                          href="https://www.instagram.com/you.are.a.hitman/" 
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-accent hover:text-accent/80 transition-colors underline"
-                        >
-                          @you.are.a.hitman
-                        </a>
+                <div className="space-y-3">
+                  <div className="p-4 border border-accent/30 bg-accent/5">
+                    <div className="flex items-start space-x-3">
+                      <Mail className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
+                      <div className="flex-1">
+                        <div className="font-mono text-sm">
+                          <a 
+                            href="https://discord.gg/htmn" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent hover:text-accent/80 transition-colors underline"
+                          >
+                            discord.gg/htmn
+                          </a>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1">
+                          Main coordination hub • Strategy discussion • Community updates
+                        </div>
                       </div>
-                      <div className="text-xs text-muted-foreground mt-1">
-                        Follow for daily marks • Report harmful content • Protect children
+                    </div>
+                  </div>
+
+                  <div className="p-4 border border-accent/30 bg-accent/5">
+                    <div className="flex items-start space-x-3">
+                      <Mail className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
+                      <div className="flex-1">
+                        <div className="font-mono text-sm">
+                          <a 
+                            href="https://www.instagram.com/you.are.a.hitman/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent hover:text-accent/80 transition-colors underline"
+                          >
+                            @you.are.a.hitman
+                          </a>
+                        </div>
+                        <div className="text-xs text-muted-foreground mt-1">
+                          Follow for daily marks • Report harmful content • Protect children
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -125,6 +148,10 @@ const Recruitment = () => {
           <div className="mission-card">
             <h3 className="font-mono text-accent mb-4">HOW TO JOIN THE MISSION</h3>
             <div className="space-y-3 text-sm">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
+                <span>Join Discord server: discord.gg/htmn</span>
+              </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
                 <span>Follow @you.are.a.hitman on Instagram</span>
