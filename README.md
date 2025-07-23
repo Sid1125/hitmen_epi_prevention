@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# 🕶️ HITMEN: EPI Prevention Mission  
+**A digital vigilante front against Early Porn Introduction (EPI)**
 
-## Project info
+> *“If the platform won’t moderate, we will.”*
 
-**URL**: https://lovable.dev/projects/77699045-62bb-4f9f-9f13-5dfae417beb6
+---
 
-## How can I edit this code?
+## ⚫ What is HITMEN?
 
-There are several ways of editing your application.
+HITMEN is a crowdsourced initiative that targets Instagram accounts spreading pornographic, gore, and disturbing media — particularly those exposing young audiences to such content under poor platform moderation.
 
-**Use Lovable**
+The project originated from the powerful community behind [@you.are.a.hitman](https://instagram.com/you.are.a.hitman) — a page that identifies ("marks") offending accounts and empowers 500K+ followers to report them into oblivion.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/77699045-62bb-4f9f-9f13-5dfae417beb6) and start prompting.
+We are not passive.  
+We are not waiting.  
+We are the algorithm's shadow.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🔍 Live Preview
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🌐 **[Preview the site here](https://preview--hitmen-cipher-nexus.lovable.app/)**  
+(*Note: DNS and domain name to be finalized soon*)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ⚙️ Core Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Feature | Description |
+|--------|-------------|
+| 🗂️ **Marks Page** | Displays active "marks" — accounts identified for takedown. Pulled live from Discord. |
+| ✅ **Auto-Verification** | Each mark is dynamically checked. Once banned, the tile is greyed out with a red **NEUTRALISED** badge. |
+| 🧠 **Community Sourced** | Follows a decentralized workflow powered by mass reporting and responsible digital action. |
+| 🎨 **Gritty UI** | Inspired by '90s aesthetics — monochrome, textured, and unapologetically raw. |
+| ⛓️ **Forum (WIP)** | A lightweight internal forum for HITMEN members to post leads, vote, and report new marks. |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Frontend:** HTML + TailwindCSS (Monochrome theme, custom typography)
+- **Backend:** Node.js + Discord API integration (Mark pulling & verification)
+- **Deployment:** Lovable + GitHub Pages (WIP custom domain)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📡 Discord Integration
 
-**Use GitHub Codespaces**
+We auto-fetch Instagram account URLs marked in a dedicated Discord channel. Each tile updates dynamically on the site:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- 🔴 Active → account still live
+- 🟢 **NEUTRALISED** → account banned (validated via URL check)
 
-## What technologies are used for this project?
+> ⚠️ Rate-limited to avoid spamming Instagram servers.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 👤 Team
 
-## How can I deploy this project?
+Built by a collective of developers, designers, and ethical cyber warriors.  
+This repo is maintained by [@Sid1125](https://github.com/Sid1125) and collaborators under HITMEN's dev wing.
 
-Simply open [Lovable](https://lovable.dev/projects/77699045-62bb-4f9f-9f13-5dfae417beb6) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## ✊ Join The Mission
 
-Yes, you can!
+- Instagram: [@you.are.a.hitman](https://instagram.com/you.are.a.hitman)
+- Discord: [discord.gg/htmn](https://discord.gg/htmn)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Report. Neutralise. Repeat.  
+**We don't miss.**
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+## 📄 License
+
+This project is licensed under the **Anti-Exploitation Open License (AEOL)**  
+> Use this code only to protect. Never to harass, exploit, or abuse.
+
+---
