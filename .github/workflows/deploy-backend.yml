@@ -15,15 +15,49 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Push to Hugging Face Space
+      - name: Prepare filtered repo and push to HF Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
+          HF_DIR="$HOME/hf-sync"
+          rm -rf "$HF_DIR"
+          mkdir -p "$HF_DIR"
+
+          # Copy only files needed for Docker build
+          cp -r hf_space "$HF_DIR/hf_space"
+          cp -r discord_bot "$HF_DIR/discord_bot"
+          mkdir -p "$HF_DIR/src/forum_app"
+          cp -r src/forum_app/backend "$HF_DIR/src/forum_app/backend"
+          cp src/forum_app/backend/requirements.txt "$HF_DIR/requirements.txt"
+
+          # Clean pycache
+          find "$HF_DIR" -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
+          find "$HF_DIR" -name "node_modules" -type d -exec rm -rf {} + 2>/dev/null || true
+          find "$HF_DIR" -name ".env" -type f -delete 2>/dev/null || true
+
+          # Create root .gitattributes for LF endings
+          echo "Dockerfile text eol=lf" > "$HF_DIR/.gitattributes"
+
+          # Create root README.md with HF metadata
+          cat > "$HF_DIR/README.md" << 'EOF'
+---
+title: HITMEN
+emoji: 🏃
+colorFrom: yellow
+colorTo: indigo
+sdk: docker
+pinned: false
+---
+
+# HITMEN EPI Prevention Mission
+EOF
+
+          cd "$HF_DIR"
+          git init
           git config user.email "bot@hitmen.space"
           git config user.name "HITMEN Bot"
-          git remote remove hf 2>/dev/null || true
+          git add -A
+          git commit -m "sync: HITMEN backend ${GITHUB_SHA:0:8}"
           git remote add hf https://DankSid:$HF_TOKEN@huggingface.co/spaces/DankSid/HITMEN
-          git push hf HEAD:main --force
+          git push hf main --force
