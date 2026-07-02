@@ -32,6 +32,6 @@ COPY hf_space/startup.py /code/hf_startup.py
 COPY hf_space/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-EXPOSE 8000
+EXPOSE 7860
 
 CMD ["/entrypoint.sh"]
