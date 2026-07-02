@@ -1,0 +1,53 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://forum:secret@db:5432/forumdb
+    restart: always
+
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: forum
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: forumdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  discord_bot:
+    build: ../../../discord_bot
+    restart: always
+    env_file:
+      - ../../../.env
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - TARGET_CHANNEL_ID=${TARGET_CHANNEL_ID}
+    volumes:
+      - shared_data:/data
+      - ../../../ban_list.txt:/app/seed_ban_list.txt:ro
+    depends_on:
+      - nginx
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - frontend_dist:/usr/share/nginx/html
+      - ../../forum_app/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - shared_data:/data
+    depends_on:
+      - api
+    restart: always
+
+volumes:
+  postgres_data:
+  shared_data:
+  frontend_dist:

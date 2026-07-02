@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://forum:secret@db:5432/forumdb
+
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: forum
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: forumdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

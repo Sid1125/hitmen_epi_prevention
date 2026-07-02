@@ -9,7 +9,10 @@ import Manifesto from "./pages/Manifesto";
 import MarksGallery from "./pages/MarksGallery";
 import Operations from "./pages/Operations";
 import Intel from "./pages/Intel";
+import PostDetail from "./pages/PostDetail";
+import Profile from "./components/Profile";
 import Recruitment from "./pages/Recruitment";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,7 +22,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.VITE_BASE_URL || ''}>
         <div className="min-h-screen bg-background text-foreground relative static-noise">
           <Navigation />
           <Routes>
@@ -28,7 +31,11 @@ const App = () => (
             <Route path="/marks" element={<MarksGallery />} />
             <Route path="/operations" element={<Operations />} />
             <Route path="/intel" element={<Intel />} />
+            <Route path="/intel/post/:postId" element={<PostDetail />} />
+            <Route path="/intel/user/:username" element={<Profile />} />
+            <Route path="/intel/me/profile" element={<Profile isOwnProfile={true} />} />
             <Route path="/recruitment" element={<Recruitment />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

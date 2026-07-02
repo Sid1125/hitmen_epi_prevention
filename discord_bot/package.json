@@ -1,0 +1,25 @@
+{
+  "name": "hitmen-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for tracking Instagram usernames from HITMEN operations",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "instagram",
+    "tracking",
+    "hitmen"
+  ],
+  "author": "HITMEN Operations",
+  "license": "MIT"
+} 

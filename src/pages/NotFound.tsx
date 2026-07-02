@@ -47,6 +47,7 @@ const NotFound = () => {
 
       <div className="text-center space-y-8 animate-fade-in relative z-10">
         {/* Error Icon */}
+        <br></br><br></br>
         <div className="flex justify-center">
           <div className="p-4 border border-accent rounded-full bg-accent/10">
             <AlertTriangle className="w-12 h-12 text-accent" />
@@ -113,6 +114,7 @@ const NotFound = () => {
           <div>INCIDENT ID: {Math.random().toString(36).substr(2, 9).toUpperCase()}</div>
           <div>CLASSIFICATION: UNCLASSIFIED</div>
           <div>RESPONSE TEAM: <span className="classified-text">REDACTED</span></div>
+          <br></br><br></br>
         </div>
       </div>
     </div>

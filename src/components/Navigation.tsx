@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
-import { Target, Shield, Users, FileText, Radar, UserPlus } from "lucide-react";
+import { Target, Shield, Users, FileText, Crosshair, UserCheck, Scroll, Eye } from "lucide-react";
 
 const Navigation = () => {
   const navItems = [
     { path: "/", icon: Target, label: "HOME" },
-    { path: "/manifesto", icon: FileText, label: "MANIFESTO" },
-    { path: "/marks", icon: Shield, label: "MARKS" },
-    { path: "/operations", icon: Radar, label: "OPS" },
-    { path: "/intel", icon: Users, label: "INTEL" },
-    { path: "/recruitment", icon: UserPlus, label: "RECRUIT" },
+    { path: "/manifesto", icon: Scroll, label: "MANIFESTO" },
+    { path: "/marks", icon: Crosshair, label: "MARKS" },
+    { path: "/operations", icon: Shield, label: "OPS" },
+    { path: "/intel", icon: Eye, label: "INTEL" },
+    { path: "/recruitment", icon: UserCheck, label: "RECRUIT" },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Navigation = () => {
                   key={item.path}
                   to={item.path}
                   className={({ isActive }) =>
-                    `flex items-center space-x-1 text-sm font-mono tracking-wider transition-colors duration-300 ${
+                    `flex items-center space-x-1 text-base font-mono tracking-wider transition-colors duration-300 ${
                       isActive
                         ? "text-accent"
                         : "text-foreground hover:text-accent"

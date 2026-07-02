@@ -1,0 +1,14 @@
+[
+    {
+        "username": "test_user_1",
+        "status": "active",
+        "threatLevel": "high",
+        "dateAdded": "2024-01-15T10:30:00Z"
+    },
+    {
+        "username": "test_user_2", 
+        "status": "neutralised",
+        "threatLevel": "medium",
+        "dateAdded": "2024-01-14T15:45:00Z"
+    }
+]

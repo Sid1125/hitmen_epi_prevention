@@ -1,0 +1,29 @@
+name: Deploy Backend to Hugging Face Space
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/forum_app/backend/**'
+      - 'discord_bot/**'
+      - 'hf_space/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -f hf_space/Dockerfile -t hf-space-build .
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: ${{ vars.HF_SPACE_NAME }}
+        run: |
+          echo "$HF_TOKEN" | docker login hf-registry.huggingface.co -u ${{ github.repository_owner }} --password-stdin
+          docker tag hf-space-build hf-registry.huggingface.co/$HF_SPACE:latest
+          docker push hf-registry.huggingface.co/$HF_SPACE:latest

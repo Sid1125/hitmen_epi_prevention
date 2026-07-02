@@ -3,97 +3,77 @@ import { FileText, Lock } from "lucide-react";
 const Manifesto = () => {
   return (
     <div className="pt-24 pb-16 px-6">
+      <div className="absolute inset-0 pointer-events-none z-0 bg-grid opacity-50 scanline" />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Lock className="w-5 h-5 text-accent" />
-            <h1 className="text-4xl font-display font-medium tracking-wide">MANIFESTO</h1>
+            <h1 className="text-4xl font-display font-medium tracking-widest uppercase">Manifesto</h1>
             <Lock className="w-5 h-5 text-accent" />
           </div>
           <div className="h-px w-24 bg-accent mx-auto opacity-60" />
         </div>
 
-        {/* Document Header */}
-        <div className="mission-card mb-8 font-mono text-sm">
+        {/* Mission Card */}
+        <div className="mission-card mb-12 font-mono text-sm border border-muted/40 p-6 bg-background/80 shadow-inner animate-fade-in">
           <div className="border-b border-border pb-4 mb-4">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-accent">MISSION BRIEF</span>
+            <div className="flex justify-between items-center text-xs uppercase font-semibold text-accent">
+              <span>Mission Brief</span>
               <span className="text-muted-foreground">EPI-PREV-001</span>
             </div>
-            <div className="space-y-1 text-xs text-muted-foreground">
-              <div>OPERATION: EARLY PORN INTRODUCTION PREVENTION</div>
-              <div>PLATFORM: INSTAGRAM (@you.are.a.hitman)</div>
-              <div>CLASSIFICATION: COMMUNITY INITIATIVE</div>
+            <div className="space-y-1 text-muted-foreground mt-2 text-xs">
+              <div>OPERATION: <strong className="text-foreground">Early Porn Introduction Prevention</strong></div>
+              <div>PLATFORM: Instagram <span className="text-accent">(@you.are.a.hitman)</span></div>
+              <div>CLASSIFICATION: Community Initiative</div>
             </div>
           </div>
 
-          <div className="space-y-4 text-foreground leading-relaxed">
-            <h2 className="text-lg font-semibold text-accent mb-3">MISSION STATEMENT</h2>
-            
+          <div className="space-y-5 leading-relaxed text-foreground text-sm">
+            <h2 className="text-lg font-semibold text-accent">MISSION STATEMENT</h2>
             <p>
-              In the digital age where harmful content spreads unchecked, where children are exposed 
-              to inappropriate material, and where platform moderation fails - we stand as guardians. 
-              The HITMEN community is not about vigilantism—it is about digital child safety.
+              In a digital landscape where children scroll before they speak, danger is just one swipe away.
+              Platforms fail. Filters fail. But we do not.
             </p>
 
             <p>
-              Every inappropriate account active. Every disturbing post spreading. Every young mind 
-              at risk from <strong>Early Porn Introduction</strong>. We document. We report. We protect.
+              HITMEN isn't a rebellion — it's a defense. Against <span className="font-bold">EPI (Early Porn Introduction)</span>, 
+              against unregulated exposure, and against those who prey on the unaware.
             </p>
 
             <p className="text-accent font-medium">
-              With 500,000+ digital guardians and 2,040+ harmful accounts eliminated, 
-              we are Instagram's most effective community moderation force.
+              500,000+ agents deployed. 2,040+ accounts neutralized. Instagram’s most effective civilian strikeforce.
             </p>
 
-            <h3 className="text-accent font-medium mt-6 mb-2">CORE PRINCIPLES</h3>
-            
-            <div className="space-y-3 pl-4">
-              <div className="flex items-start space-x-2">
-                <span className="text-accent mt-1">•</span>
-                <span>Protect children from Early Porn Introduction (EPI)</span>
-              </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent mt-1">•</span>
-                <span>Document and report harmful content systematically</span>
-              </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent mt-1">•</span>
-                <span>Coordinate community-driven content moderation</span>
-              </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent mt-1">•</span>
-                <span>Support Instagram's Terms of Service enforcement</span>
-              </div>
-              <div className="flex items-start space-x-2">
-                <span className="text-accent mt-1">•</span>
-                <span>Maintain transparency in all reporting activities</span>
-              </div>
-            </div>
+            <h3 className="text-accent font-semibold mt-6">CORE PRINCIPLES</h3>
+            <ul className="list-none pl-4 space-y-2 text-sm">
+              <li className="flex items-start space-x-2"><span className="text-accent mt-1">→</span><span>Shield young users from EPI</span></li>
+              <li className="flex items-start space-x-2"><span className="text-accent mt-1">→</span><span>Detect, document, and report at scale</span></li>
+              <li className="flex items-start space-x-2"><span className="text-accent mt-1">→</span><span>Mobilize through community coordination</span></li>
+              <li className="flex items-start space-x-2"><span className="text-accent mt-1">→</span><span>Uphold platform integrity—without apology</span></li>
+              <li className="flex items-start space-x-2"><span className="text-accent mt-1">→</span><span>Operate transparently under digital law</span></li>
+            </ul>
 
-            <div className="mt-8 p-4 border border-accent/30 bg-accent/5">
-              <p className="text-center italic text-accent">
-                "In unity we protect. In numbers we succeed. Together we shield the innocent 
-                from digital harm. Follow @you.are.a.hitman - Join the mission."
-              </p>
+            <div className="mt-8 p-4 border border-accent/50 bg-accent/5 text-center italic text-accent rounded-sm shadow-md">
+              "In unity we protect. In numbers we succeed. Together we shield the innocent 
+              from digital harm. <strong className="text-foreground"><br></br>Follow @you.are.a.hitman — Join the mission.</strong>"
             </div>
 
             <div className="mt-6 pt-4 border-t border-border text-xs text-muted-foreground">
               <div className="flex justify-between">
-                <span>COMMUNITY LEADERS: @you.are.a.hitman</span>
-                <span>ESTABLISHED: 2023</span>
+                <span>Community Lead: <span className="text-accent">@you.are.a.hitman</span></span>
+                <span>Founded: 2023</span>
               </div>
-              <div className="mt-2 text-center">
-                <span>VERIFIED ELIMINATIONS: 2,040+ • ACTIVE AGENTS: 500,000+</span>
+              <div className="mt-2 text-center text-accent font-semibold">
+                VERIFIED ELIMINATIONS: 2,040+ • ACTIVE AGENTS: 508,000+
               </div>
             </div>
           </div>
         </div>
 
         {/* Navigation Hint */}
-        <div className="text-center text-xs font-mono text-muted-foreground">
-          FOLLOW @YOU.ARE.A.HITMAN ON INSTAGRAM • JOIN THE DIGITAL PROTECTION FORCE
+        <div className="text-center text-xs font-mono text-muted-foreground tracking-wide animate-fade-in-up">
+          FOLLOW <span className="text-accent">@you.are.a.hitman</span> ON INSTAGRAM • ENLIST. DEFEND. PROTECT.
         </div>
       </div>
     </div>

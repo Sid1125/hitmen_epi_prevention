@@ -28,6 +28,7 @@ const Recruitment = () => {
 
   return (
     <div className="pt-24 pb-16 px-6">
+      <div className="absolute inset-0 pointer-events-none z-0 bg-grid opacity-50 scanline" />
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">

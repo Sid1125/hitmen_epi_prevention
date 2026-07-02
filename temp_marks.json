@@ -1,0 +1,23 @@
+[
+  {
+    "username": "sample_banned_user1",
+    "status": "NEUTRALISED",
+    "threatLevel": "HIGH",
+    "dateAdded": "2024-01-15",
+    "lastModified": "2024-01-20T10:30:00.000Z"
+  },
+  {
+    "username": "sample_banned_user2",
+    "status": "NEUTRALISED", 
+    "threatLevel": "CRITICAL",
+    "dateAdded": "2024-01-10",
+    "lastModified": "2024-01-18T14:20:00.000Z"
+  },
+  {
+    "username": "active_threat_example",
+    "status": "ACTIVE",
+    "threatLevel": "MEDIUM",
+    "dateAdded": "2024-07-26",
+    "lastModified": "2024-07-26T18:52:00.000Z"
+  }
+]
