@@ -12,7 +12,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
 
 WORKDIR /code
 
-COPY requirements.txt .
+COPY src/forum_app/backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src/forum_app/backend/ .
